@@ -1,12 +1,12 @@
 # Benchmark
 CityBench is a java-based benchmarking toolset for RSP engines, currently CQELS, C-SPARQL, RDFox, C-SPARQL2.0, and YASPER (see https://github.com/Comparative-Research-in-StreamReasoning/CityBench-CSPARQL-RDFox/) are supported.
 
-##Prerequisite
+## Prerequisite
 * JVM 1.7
 * Webserver of your choice (Apache, JBoss,Tomcat etc.)
 * Java IDE (for debugging and extensions)
 
-##Folders & Files
+## Folders & Files
 1. *CQELS_DB*: necessary for CQELS to work;
 2. *cqels_query*: sample queries in CQELS syntax;
 3. *csparql_query*: sample queries in C-SPARQL syntax;
@@ -23,7 +23,7 @@ CityBench is a java-based benchmarking toolset for RSP engines, currently CQELS,
 14. *start.sh*: central execution for scalability experiments.
 
 
-##To run
+## To run
 1. Download all resources and source code
 2. Provide 'CQELS_DB' folder if you want to run CQELS experiments
 3. Provide static data for queries (e.g. via Apache Web Server)
@@ -31,7 +31,7 @@ CityBench is a java-based benchmarking toolset for RSP engines, currently CQELS,
 5. Import the project to your Java IDE and integrate all libraries (provided as jars in the lib-folder) as dependencies
 6. Run CityBench.java
 
-##Configuration file
+## Configuration file
 * dataset = dataset/[your_sensor_repository_file]  // tell CityBench where to look for static background knowledge.
 * ontology = [your_ontology_folder] // tell CityBench where to look for ontologies used.
 * streams = [your_streams_folder] // tell CityBench where to look for raw data to simulate sensor streams.
@@ -41,7 +41,7 @@ CityBench is a java-based benchmarking toolset for RSP engines, currently CQELS,
 
 // All paths are relative path to the project root
 
-##Program Parameters
+## Program Parameters
 **Acceptable params:**      
 * _rate_ = (double)x, // sensor stream acceleration rate (based on real world sensor observation intervals)
 * _frequency_ = (double)c.  // fixed frequency for sensors, only has effects when rate=1.0
